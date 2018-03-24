@@ -5,25 +5,25 @@ AppiePy: A Python API for Albert Heijn
       :target: https://pypi.python.org/pypi/appiepy/
       :alt: Version
 .. image:: https://img.shields.io/pypi/l/appiepy.svg
+      :target: https://pypi.python.org/pypi/appiepy/
       :alt: PyPI - License
 
 AppiePy is a wrapper around Albert Heijn products you can find on their website `https://ah.nl/ <https://ah.nl/>`_.
 It allows you to retrieve information about these products and use it inside your application. Common uses are price/discount information, brand/category information, or nutritional information.
 
 
-
 Installation
 ------------
 Installation can be done through pip:
 
-.. code:: bash
+.. code-block:: shell
 
     pip install appiepy
 
 Usage
 -----
 
-.. code:: python
+.. code-block:: python
 
     from appiepy import Product
     from pprint import pprint
