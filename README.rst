@@ -1,5 +1,5 @@
 AppiePy: A Python API for Albert Heijn
-================================
+======================================
 
 .. image:: https://img.shields.io/pypi/v/apppiepy.svg
       :target: https://pypi.python.org/pypi/appiepy/
@@ -21,7 +21,7 @@ Installation can be done through pip:
     pip install appiepy
 
 Usage
-------
+-----
 
 .. code:: python
 

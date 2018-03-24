@@ -1,8 +1,13 @@
--e git+git@github.com:rkalis/AppiePy.git@300f822f9b2f8c3ba17211a7706eee5ce0ceecf2#egg=appiepy
+-e git+git@github.com:rkalis/AppiePy.git@1c91e426ea0c047d29b1d5118f3043b7c86b94ae#egg=appiepy
 certifi==2018.1.18
 chardet==3.0.4
 coverage==4.5.1
 idna==2.6
 nose==1.3.7
+pbr==3.1.1
+pkginfo==1.4.2
 requests==2.18.4
+requests-toolbelt==0.8.0
+tqdm==4.19.8
+twine==1.11.0
 urllib3==1.22
