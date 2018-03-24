@@ -1,5 +1,4 @@
-## !! Could not determine repository location
-appiepy==0.1.0
+-e git+git@github.com:rkalis/AppiePy.git@300f822f9b2f8c3ba17211a7706eee5ce0ceecf2#egg=appiepy
 certifi==2018.1.18
 chardet==3.0.4
 coverage==4.5.1
