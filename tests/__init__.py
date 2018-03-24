@@ -10,6 +10,7 @@ class ProductTests(unittest.TestCase):
         product = appiepy.Product(url)
 
         # then
+        self.assertEqual(product.url, url)
         self.assertIsInstance(product.id, str)
         self.assertIsInstance(product.brand, str)
         self.assertIsInstance(product.description, str)
@@ -30,6 +31,7 @@ class ProductTests(unittest.TestCase):
         product = appiepy.Product(url)
 
         # then
+        self.assertEqual(product.url, url)
         self.assertIsInstance(product.id, str)
         self.assertIsInstance(product.brand, str)
         self.assertIsInstance(product.description, str)

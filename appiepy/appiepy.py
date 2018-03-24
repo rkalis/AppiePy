@@ -18,8 +18,11 @@ def _parse_nutrition(string):
 
 class Product():
     def __init__(self, url):
+        self.url = url
+
         request_url = _get_request_url(url)
         res = requests.get(request_url).json()
+
         for lane in res['_embedded']['lanes']:
             if lane['type'] == 'ProductDetailLane':
                 for item in lane['_embedded']['items']:
