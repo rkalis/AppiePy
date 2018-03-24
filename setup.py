@@ -7,13 +7,13 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
-with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
     name='appiepy',
     version='0.1.0',
-    description='An Albert Heijn API for Python',
+    description='A Python API for Albert Heijn',
     long_description=long_description,
     url='https://github.com/rkalis/AppiePy',
     author='Rosco Kalis',
@@ -32,7 +32,7 @@ setup(
     keywords='albert heijn API nutrition price',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     install_requires=['requests'],
-    python_requires='~=3.3',
+    python_requires='~=3.4',
     extras_require={
         # 'dev': ['check-manifest'],
         # 'test': ['coverage'],

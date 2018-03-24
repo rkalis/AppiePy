@@ -31,7 +31,7 @@ class Product():
                     product = item['_embedded']['product']
                     self.id = product['id']
                     self.brand = product['brandName']
-                    self.description = product['description']
+                    self.description = product['description'].replace('\xad', '')
                     self.summary = product['details']['summary']
                     self.unit_size = product['unitSize']
                     self.category = product['categoryName']
