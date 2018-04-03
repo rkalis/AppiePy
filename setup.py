@@ -31,8 +31,8 @@ setup(
     install_requires=['requests'],
     python_requires='~=3.4',
     extras_require={
-        # 'dev': ['check-manifest'],
-        # 'test': ['coverage'],
+        'dev': ['twine', ],
+        'test': ['nose', 'coverage'],
     },
     package_data={
         # 'sample': ['package_data.dat'],

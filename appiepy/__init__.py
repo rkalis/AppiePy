@@ -1,1 +1,1 @@
-from .appiepy import Product
+from .__private import Product, ProductNotFoundException
