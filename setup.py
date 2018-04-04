@@ -9,7 +9,7 @@ with open(path.join(here, 'README.rst')) as f:
 
 setup(
     name='appiepy',
-    version='0.1.1',
+    version='0.2.0',
     description='A Python API for Albert Heijn',
     long_description=readme,
     url='https://github.com/rkalis/AppiePy',

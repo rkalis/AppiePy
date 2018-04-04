@@ -29,45 +29,43 @@ Usage
     from pprint import pprint
 
     # Full product url
-    product = Product('https://www.ah.nl/producten/product/wi395948/ah-kleintje-spinazie')
+    product = Product('https://www.ah.nl/producten/product/wi193679/lay-s-paprika')
 
     # Or just the path
-    product = Product('/producten/product/wi395948/ah-kleintje-spinazie')
+    product = Product('/producten/product/wi193679/lay-s-paprika')
 
     pprint(vars(products))
 
     # {
-    #     'brand': 'AH',
-    #     'category': 'Aardappel, groente, fruit/Spinazie (vers)',
-    #     'description': 'AH Kleintje spinazie',
-    #     'features': [{'identifier': 'gezonde_keuze_klavertje', 'text': 'Gezondere keuze'},
-    #                 {'identifier': 'free_from_gluten', 'text': 'Bevat geen gluten'},
-    #                 {'identifier': 'free_from_milk', 'text': 'Bevat geen melk'}],
-    #     'id': 'wi395948',
+    #     'brand': "Lay's",
+    #     'category': 'Snoep, koek, chips/Paprika chips',
+    #     'description': "Lay's Paprika",
+    #     'features': [{'identifier': 'green_dot', 'text': 'Groene Punt'}],
+    #     'id': 'wi193679',
+    #     'ingredients': ['aardappelen',
+    #                     ' plantaardige oliën (zonnebloem (26%), koolzaad (6%))',
+    #                     ' paprikasmaak [suiker, zout, paneermeel (van TARWE), '
+    #                     'paprika, MELKWEI-permeaat, uienpoeder, kaliumchloride, '
+    #                     "aroma's, knoflookpoeder, johannesbroodpitmeel, kleurstof "
+    #                     "(paprika-extract), rookaroma's, zuurteregelaars (citroenzuur "
+    #                     'en appelzuur)].'],
     #     'is_available': True,
-    #     'is_discounted': True,
-    #     'nutrition': {'Eiwitten': '3 g',
-    #                   'Energie': '110 kJ (26 kcal)',
-    #                   'Koolhydraten': '0.9 g',
-    #                   'Vet': '0.6 g',
-    #                   'Vitamine B11 / Foliumzuur': '130.9 µg',
-    #                   'Voedingsvezel': '2 g',
-    #                   'Waarvan enkelvoudig onverzadigd': '0 g',
-    #                   'Waarvan meervoudig onverzadigd': '0.5 g',
-    #                   'Waarvan suikers': '0 g',
-    #                   'Waarvan verzadigd': '0.1 g',
-    #                   'Zout': '0 g'},
-    #     'price': {'now': 1.29},
-    #     'summary': 'Spinazie om te (roer)bakken, voor in de salade, stamppot of in '
-    #                'een hartige taart. Met spinazie kun je eindeloos combineren. '
-    #                'Extra handig! Deze spinazie is al gewassen en dus direct klaar '
-    #                'voor gebruik.\n'
-    #                '\n'
-    #                '[list][*]Met een zachte smaak\n'
-    #                '[*]Je kunt spinazie ook rauw eten door een salade of smoothie\n'
-    #                '[*]Gewassen in ijswater\n'
-    #                '[/list]',
-    #     'unit_size': '200 g',
-    #     'url': 'https://www.ah.nl/producten/product/wi395948/ah-kleintje-spinazie'
+    #     'is_discounted': False,
+    #     'nutrition': {'Eiwitten': '6.1 g',
+    #                   'Energie': '2215 kJ (531 kcal)',
+    #                   'Koolhydraten': '52 g',
+    #                   'Vet': '32 g',
+    #                   'Voedingsvezel': '4.6 g',
+    #                   'Waarvan suikers': '2.4 g',
+    #                   'Waarvan verzadigd': '2.7 g',
+    #                   'Zout': '1.4 g'},
+    #     'price_current': 1.29,
+    #     'price_previous': None,
+    #     'summary': "De enige echte Lay's chips met paprikasmaak[list][*]Zonder "
+    #             'kunstmatige kleurstoffen en conserveringsmiddelen\n'
+    #             '[*]Zonder toegevoegde smaakversterkers\n'
+    #             '[*]Bevat 7-8 porties\n'
+    #             '[/list]',
+    #     'unit_size': '225 g',
+    #     'url': '/producten/product/wi193679/lay-s-paprika'
     # }
-
