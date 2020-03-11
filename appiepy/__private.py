@@ -53,6 +53,10 @@ class Product():
                     product = item['_embedded']['product']
                     self.id = product.get('id', None)
                     self.brand = product.get('brandName', None)
+                    if product.get('images'):
+                        self.image_url = product['images'][0]['link'].get('href', None)
+                    else:
+                        self.image_url = None
                     self.description = product.get('description', '').replace('\xad', '')
                     self.summary = product.get('details', {}).get('summary', None)
                     self.unit_size = product.get('unitSize', None)
