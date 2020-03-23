@@ -9,7 +9,7 @@ with open(path.join(here, 'README.rst')) as f:
 
 setup(
     name='appiepy',
-    version='0.2.0',
+    version='0.2.1',
     description='A Python API for Albert Heijn',
     long_description=readme,
     url='https://github.com/rkalis/AppiePy',
@@ -25,6 +25,8 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
     keywords='albert heijn products API nutrition price',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),

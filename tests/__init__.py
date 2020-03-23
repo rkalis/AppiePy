@@ -6,6 +6,7 @@ class ProductTests(unittest.TestCase):
     def test_url_path(self):
         # given
         url = '/producten/product/wi395948/ah-kleintje-spinazie'
+
         # when
         product = appiepy.Product(url)
 
@@ -13,6 +14,7 @@ class ProductTests(unittest.TestCase):
         self.assertEqual(product.url, url)
         self.assertIsInstance(product.id, str)
         self.assertIsInstance(product.brand, str)
+        self.assertIsInstance(product.image_url, str)
         self.assertIsInstance(product.description, str)
         self.assertIsInstance(product.summary, str)
         self.assertIsInstance(product.unit_size, str)
@@ -34,6 +36,7 @@ class ProductTests(unittest.TestCase):
         self.assertEqual(product.url, url)
         self.assertIsInstance(product.id, str)
         self.assertIsInstance(product.brand, str)
+        self.assertIsInstance(product.image_url, str)
         self.assertIsInstance(product.description, str)
         self.assertIsInstance(product.summary, str)
         self.assertIsInstance(product.unit_size, str)
