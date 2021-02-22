@@ -20,7 +20,6 @@ python3 -m unittest
 
 ```shell
 rm -r build/ dist/
-python3 setup.py sdist
-python3 setup.py bdist_wheel
+python3 setup.py sdist bdist_wheel
 twine upload dist/*
 ```

@@ -20,14 +20,16 @@ def _split(s):
     parts = []
     bracket_level = 0
     current = []
-    for c in (s + ","):
-        if c == "," and bracket_level == 0:
-            parts.append("".join(current))
+    for c in (s + ','):
+        if c == ',' and bracket_level == 0:
+            part = ''.join(current).strip()
+            part = part[:-1] if part.endswith('.') else part
+            parts.append(part)
             current = []
         else:
-            if c in ["{", "(", "["]:
+            if c in ['{', '(', '[']:
                 bracket_level += 1
-            elif c in ["}", ")", "]"]:
+            elif c in ['}', ')', ']']:
                 bracket_level -= 1
             current.append(c)
     return parts
@@ -90,5 +92,5 @@ class Product():
 
 class ProductNotFoundException(Exception):
     def __init__(self, url):
-        Exception.__init__(self, "Product with URL {} could not be found".format(url))
+        Exception.__init__(self, 'Product with URL {} could not be found'.format(url))
         self.url = url

@@ -4,7 +4,7 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
-with open(path.join(here, 'README.rst')) as f:
+with open(path.join(here, 'README.md')) as f:
     readme = f.read()
 
 setup(
@@ -12,6 +12,7 @@ setup(
     version='0.2.1',
     description='A Python API for Albert Heijn',
     long_description=readme,
+    long_description_content_type="text/markdown",
     url='https://github.com/rkalis/AppiePy',
     author='Rosco Kalis',
     author_email='roscokalis@gmail.com',
@@ -33,13 +34,10 @@ setup(
     install_requires=['requests'],
     python_requires='~=3.4',
     extras_require={
-        'dev': ['twine', ],
+        'dev': ['twine'],
         'test': ['nose', 'coverage'],
     },
-    package_data={
-        # 'sample': ['package_data.dat'],
-    },
-    # data_files=[('my_data', ['data/data_file'])],
+    setup_requires=['wheel'],
     entry_points={
         # 'console_scripts': [
         #     'sample=sample:main',

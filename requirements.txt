@@ -1,4 +1,3 @@
--e git+git@github.com:rkalis/AppiePy.git@2fa9050fa57ead7dc7cd8092788126af39dc2fa5#egg=appiepy
 bleach==3.1.1
 certifi==2019.11.28
 chardet==3.0.4
