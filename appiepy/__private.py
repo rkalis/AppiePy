@@ -32,6 +32,9 @@ def _split(s):
             current.append(c)
     return parts
 
+def _parse_allergy(string):
+    return _split(string.replace('Bevat: ', ''))
+
 def _parse_ingredients(string):
     return _split(string.replace('Ingrediënten: ', ''))
 
@@ -80,7 +83,10 @@ class Product():
                                'body' in content['text'] and \
                                'Ingrediënten:' in content['text']['body']:
                                 self.ingredients = _parse_ingredients(content['text']['body'])
-
+                            if 'text' in content and \
+                               'body' in content['text'] and \
+                               'Bevat:' in content['text']['body']:
+                                self.allergy = _parse_allergy(content['text']['body'])
 
 class ProductNotFoundException(Exception):
     def __init__(self, url):

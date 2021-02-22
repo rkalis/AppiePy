@@ -57,6 +57,16 @@ class ProductTests(unittest.TestCase):
         # then
         self.assertIsInstance(product.ingredients, list)
 
+    def test_allergy_parsed(self):
+        # given
+        url = '/producten/product/wi33693/ah-halfvolle-melk'
+
+        # when
+        product = appiepy.Product(url)
+
+        # then
+        self.assertIsInstance(product.allergy, list)
+
     def test_nonexisting_product(self):
         # given
         url = '/producten/product/wi193679/'
