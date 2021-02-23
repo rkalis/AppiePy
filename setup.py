@@ -38,11 +38,6 @@ setup(
         'test': ['nose', 'coverage'],
     },
     setup_requires=['wheel'],
-    entry_points={
-        # 'console_scripts': [
-        #     'sample=sample:main',
-        # ],
-    },
     project_urls={
         'GitHub': 'https://github.com/rkalis/AppiePy',
         'Issues': 'https://github.com/rkalis/AppiePy/issues'
