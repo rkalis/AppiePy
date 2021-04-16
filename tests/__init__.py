@@ -67,6 +67,16 @@ class ProductTests(unittest.TestCase):
         # then
         self.assertIsInstance(product.allergy, list)
 
+    def test_nutrition_parsed(self):
+        # given
+        url = '/producten/product/wi420790/princes-tonijn-stukken-in-water'
+
+        # when
+        product = appiepy.Product(url)
+
+        # then
+        self.assertIsInstance(product.nutrition, dict)
+
     def test_nonexisting_product(self):
         # given
         url = '/producten/product/wi193679/'
