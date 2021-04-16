@@ -8,6 +8,7 @@ def _get_request_url(product_url):
     return request_url
 
 def _parse_nutrition(string):
+    string=string.replace("<","&lt;")
     string = string.split('[/table]')[0] + '[/table]'
     string = string.replace('[', '<').replace(']', '>')
     table = ElementTree.XML(string)[1:]
