@@ -69,7 +69,7 @@ class ProductTests(unittest.TestCase):
 
     def test_nutrition_parsed(self):
         # given
-        url = '/producten/product/wi420790/princes-tonijn-stukken-in-water'
+        url = '/producten/product/wi496941/princes-tonijnstukken-in-water'
 
         # when
         product = appiepy.Product(url)
