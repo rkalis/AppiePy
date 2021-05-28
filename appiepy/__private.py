@@ -72,6 +72,9 @@ class Product():
                     self.price_current = priceLabel.get('now', None)
                     self.price_previous = priceLabel.get('was', None)
                     self.is_discounted = 'discount' in product
+                    discount = product.get('discount', {})
+                    self.discount_type = discount.get('label', None)
+                    self.discount_period = discount.get('period', None)
             elif lane['type'] == 'StoryLane':
                 for item in lane['_embedded']['items']:
                     for section in item['_embedded']['sections']:
