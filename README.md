@@ -33,6 +33,8 @@ print(json.dumps(product.__dict__, indent=4, sort_keys=True))
 #     "brand": "Lay's",
 #     "category": "Snoep, koek, chips en chocolade/Paprika chips",
 #     "description": "Lay's Paprika",
+#     "discount_period": "vanaf maandag",
+#     "discount_type": "2 voor 2.00",
 #     "features": [
 #         { "identifier": "green_dot", "text": "Groene Punt" },
 #         { "identifier": "recyclable_general_claim", "text": "Recyclebaar" }
