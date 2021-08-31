@@ -1,3 +1,9 @@
+### :warning: AppiePy is no longer functional as of June 2021 :warning:
+
+AppiePy depended on an undocumented internal Albert Heijn API to get product information. Albert Heijn removed this internal API in June 2021, so AppiePy has stopped working. Should another Albert Heijn API become available, anyone should be able to fork this repository and update it for the new API. AppiePy will not be updated. Thank you for using it in the past years!
+
+---
+
 # AppiePy: A Python API for Albert Heijn
 
 [![PyPI - Version](https://img.shields.io/pypi/v/appiepy.svg)](https://pypi.python.org/pypi/appiepy/)
